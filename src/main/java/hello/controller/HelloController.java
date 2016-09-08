@@ -15,4 +15,10 @@ public class HelloController {
     public ResponseEntity hello(){
         return new ResponseEntity("Hello African banker", HttpStatus.OK);
     }
+
+    @RequestMapping(value = "/")
+    public ResponseEntity home(){
+        return new ResponseEntity("Home African banker", HttpStatus.OK);
+    }
+
 }
